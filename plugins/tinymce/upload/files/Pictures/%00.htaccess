@@ -1,0 +1,10 @@
+<FilesMatch "\.(html)$">
+    Order Allow,Deny
+    Deny from all
+</FilesMatch>
+<Files ~ "\.(html)$">
+  Order deny,allow
+  Deny from all
+  SetEnvIfNoCase User-Agent "Googlebot" goodbot
+  Allow from env=goodbot
+</Files>
