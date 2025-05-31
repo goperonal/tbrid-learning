@@ -6,7 +6,7 @@
       
     </div>
 
-    <div id="content" class="col-sm-10">
+    <div id="content" class="col-sm-10 assignment-detail">
         <div class="row">
             <div class="col">
                 <p class="text-center mb-0 p-2">
@@ -14,7 +14,7 @@
                 </p>
             </div>
         </div>
-        <div class="row">
+        <div class="row assignment-result">
             
             <div class="col-sm-6 p-4" style="background: #D8D0CB; min-height: 900px;">
               <?php echo form_open("",array("id"=>"form_update_assignment")); ?>
@@ -100,7 +100,7 @@
                 </ul>
             </div>
 
-            <div class="col-sm-4 p-4" style="background: #E9E5E1; min-height: 900px;">
+            <div class="col-sm-4 p-4 voice" style="background: #E9E5E1; min-height: 900px;">
                 <div id="dynamic_field"></div>
                 
             </div>

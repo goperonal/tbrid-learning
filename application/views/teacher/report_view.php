@@ -16,7 +16,7 @@
       
     </div>
 
-    <div id="content" class="col-sm-10 bg-light py-2 px-4">
+    <div id="content" class="col-sm-10 bg-light py-2 px-4 report-content">
       <!-- <h1 class="mb-4"></h1> -->
 
       <style type="text/css">

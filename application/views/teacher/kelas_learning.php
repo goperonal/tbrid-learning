@@ -11,7 +11,7 @@
 
       <div id="content-list" class="row">
         <div class="col-sm-9 p-4 pt-0" style="background: #D6D6D6D1;">
-          <div class="clearfix">
+          <div class="clearfix title-learning">
               <div class="float-left">
                 <span class="bg-warning rounded-pill px-2 py-1"><?php echo $sub_kelas->nama_sub_kelas; ?></span>
                 <?php

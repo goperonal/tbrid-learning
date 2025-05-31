@@ -130,7 +130,7 @@
         </div>
       </div>
 
-      <div class="row" style=" margin-top: 48px;">
+      <div class="row">
         <div class="col-sm-9 p-4" style="background: #D6D6D6D1;">
           <div class="clearfix">
             <span class="bg-warning rounded-pill px-2 py-1 float-left"><?php echo $sub_kelas->nama_sub_kelas; ?></span>

@@ -12,7 +12,7 @@
         <button id="create-assignment" class="btn btn-create-assignment float-right">Create Assignment</button>
       </div>
 
-      <div class="row box-1">
+      <div class="row box-1 kelas-filter">
           <div class="col">
             <table>
               <tr>

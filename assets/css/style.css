@@ -696,6 +696,7 @@ span.bg_custom_1{
     align-items: center;
     text-align: left;
 	line-height: normal;
+	width: 100%;
 }
 
 #sidebar .class-collaps-class {
@@ -703,11 +704,14 @@ span.bg_custom_1{
 }
 
 #sidebar .class-box {
-	margin-bottom: 45px !important;
+	margin-bottom: 0px !important;
+    box-sizing: border-box;
+    display: inline-block;
+    width: 100%;
 }
 
-#sidebar.report-sidebar .class-box {
-	margin-bottom: 15px !important;
+#sidebar .class-box h4 .text-hide-collapsed {
+	font-size: 15px;
 }
 
 #content {
@@ -722,7 +726,17 @@ span.bg_custom_1{
 	max-width: calc(100% - 40px);
 }
 
+.img-fluid {
+	height: auto !important;
+}
 
+#join_class .fas{
+	display: none;
+}
+
+#sidebar.collapsed #join_class .fas {
+	display: block;
+}
 /* RESPONSIVE DESIGN
 ==================================================*/
 @media (max-width: 1200px) {
@@ -753,6 +767,42 @@ span.bg_custom_1{
 		-ms-flex: 0 0 calc(100% - 200px);
 		flex: 0 0 calc(100% - 200px);
 		max-width: calc(100% - 200px);
+	}
+
+	.assignment-detail .assignment-result {
+		display: inline-block;
+		width: 100%;
+	}
+
+	.assignment-result .col-sm-6 {
+		width: 100%;
+        max-width: unset;
+        padding: 10px 20px !important;
+        min-height: auto !important;
+		overflow-x: auto;
+	}
+
+	#ass_user_list, .assignment-result .voice {
+		min-height: unset !important;
+		width:50%;
+		flex: unset;
+		max-width: 50%;
+		display: block;
+		margin: 0;
+		box-sizing: border-box;
+		float: left;
+	}
+
+	.assignment-result .voice {
+		height: 100vh;
+	}
+
+	#content.report-content {
+		overflow-x: auto;
+	}
+
+	#content.report-content #assignment_ajax_datatables {
+		width: 1200px !important;
 	}
 }
 
@@ -864,8 +914,64 @@ span.bg_custom_1{
 	#tasks-container img {
 		height: auto !important;
 	}
+
+
+	#content-list .title-learning {
+		margin-bottom: 20px;
+	}
+	#content-list .float-left{
+		display: inline-block;
+		width: 100%;
+	}
+	#content-list .float-left span{
+		display: block;
+        max-width: 100%;
+        min-width: 200px;
+        margin: 0 auto 10px;
+        float: none;
+        text-align: center;
+	}
+
+	#create-assignment{
+		width: 100%;
+        max-width: 200px;
+        margin: 10px auto 20px;
+        float: none !important;
+        display: block;
+	}
+
+	.row.box-1{
+		margin-bottom: 20px;
+	}
+
+	.row.box-1 .col {
+		margin-bottom: 15px;
+	}
+
+	.card.shadow-none .card-body{
+		padding-left: 10px;
+		padding-right: 0;
+	}
+
+	#assignment_ajax_datatables_wrapper .row {
+		overflow-x: auto;
+	}
+	#assignment_ajax_datatables{
+		width: 800px !important;
+	}
 	#footer .container {
 		padding: 0px 10px;
+	}
+	#join_class {
+		margin: 0px !important;
+	}
+	#join_class .fas {
+		display: none;
+	}
+
+	#assignment-main .row .col-sm-6{
+		min-height: unset !important;
+		overflow: auto;
 	}
 }
 
