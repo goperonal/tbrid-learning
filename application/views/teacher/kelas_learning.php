@@ -203,7 +203,7 @@
 
                     // var_dump($user_list);
                     if($this->session->level_akses == 'teacher')
-                      echo "<li class='list-group-item'><i class='fas fa-circle fa-sx pl-1 mr-3'></i>".$this->session->user_name."</li>";
+                      echo "<li class='list-group-item student_answer' data-id='teacher'><i class='fas fa-circle fa-sx pl-1 mr-3'></i>".$this->session->user_name."</li>";
 
                     foreach ($students->result() as $student) {
                         echo "<li class='list-group-item list-students student_answer' data-id='$student->akun_id'><i class='fas fa-circle fa-sx pl-1 mr-3'></i>$student->nama_depan $student->nama_belakang</li>";
@@ -261,7 +261,11 @@
         let loadingSpinner = $('#loading-overlay');
 
         let user_id = $(this).data('id');
+        console.log(user_id);
         let subKelasId = $('#form_add_learning input[name="sub_kelas_id"]').val();
+        // Tambahkan class 'clicked-student-answer' ke yang diklik, dan hapus dari lainnya
+        $('.student_answer').removeClass('clicked-student-answer');
+        $(this).addClass('clicked-student-answer');
 
         let data = {
             'user_id': user_id,

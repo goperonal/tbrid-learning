@@ -1,4 +1,17 @@
 $(document).ready(function () {
+
+  // active menu
+  var currentPath = window.location.pathname;
+
+  $('#sidebar a').each(function () {
+    var hrefPath = $('<a>').attr('href', $(this).attr('href'))[0].pathname;
+
+    if (currentPath === hrefPath) {
+      $(this).addClass('call-active');
+    }
+  });
+
+
     const $menu = $('.nav-mobile-content');
     const $toggleTop = $('#hidden-sidebar');
     const $icon = $('#menu-icon');

@@ -259,7 +259,7 @@
 
         let user_id = $(this).data('id');
         let subKelasId = $('#form_add_learning input[name="sub_kelas_id"]').val();
-
+        console.log(subKelasId);
         let data = {
             'user_id': user_id,
             'sub_kelas_id': subKelasId,

@@ -9,6 +9,14 @@ html, body {
   padding: 0;
 }
 
+p{
+	margin-bottom: 5px;
+}
+
+#task table input[type=text] {
+	height: 30px;
+}
+
 .learning-box{
 	width: 100%;
 	min-height: 900px;
@@ -690,6 +698,10 @@ span.bg_custom_1{
 	display: none;
 }
 
+#sidebar a.call-active{
+	background-color: #BDAEAE;
+}
+
 #sidebar .badge {
 	white-space: break-spaces;
     display: flex;
@@ -762,6 +774,11 @@ span.bg_custom_1{
 .class-contentfull #zoom_right_sidebar.zoom_right_sidebar_at-bottom {
 	height: calc(100vh - 135px);
 	overflow-y: auto;
+}
+
+
+#live_user .clicked-student-answer {
+	background-color: #BDAEAE;
 }
 
 
@@ -838,6 +855,35 @@ span.bg_custom_1{
 @media (max-width: 768px) {
 	#desktop-navbar {
 		display: none;
+	}
+	p{
+		margin-bottom: 2px;
+		text-align: left !important;
+        font-size: 13px;
+	}
+
+	#task table input[type=text] {
+		height: 26px;
+	} 
+
+	li {
+		margin-bottom: 2px;
+		text-align: left !important;
+        font-size: 13px;
+	}
+	tbody th {
+		width: 100px;
+	}
+	tbody td {
+		font-size: 13px;
+	}
+
+	#task {
+		padding-left: 0px;
+	}
+
+	#task input[type=text] {
+		height: 30px;
 	}
 	#mobile-navbar {
 		display: block;
