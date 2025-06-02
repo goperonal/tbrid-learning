@@ -7,7 +7,7 @@
     </div>
 
     <!-- <div class="col-sm-10" style="min-height:200px; min-width: 600px; background: red;"> -->
-    <div id="content" class="col-sm-10">
+    <div id="content" class="col-sm-10 class-contentfull">
 
       <div id="content-list" class="row">
         <div class="col-sm-9 p-4 pt-0" style="background: #D6D6D6D1;">
