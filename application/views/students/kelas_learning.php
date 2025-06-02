@@ -7,7 +7,7 @@
     </div>
 
     <!-- <div class="col-sm-10" style="min-height:200px; min-width: 600px; background: red;"> -->
-    <div id="content" class="col-sm-10">
+    <div id="content" class="col-sm-10 class-contentfull">
       <?php if(!empty($learning) AND $learning->tampil == 'yes'): ?>
         <div class="row">
           <div class="col-sm-9 p-4" style="background: #D6D6D6D1;">
@@ -204,24 +204,24 @@
 
 <script type="text/javascript">
   $(document).ready(function(){
-    var sidebarVisible = true;  // Kondisi awal sidebar tampil
+    // var sidebarVisible = true;  // Kondisi awal sidebar tampil
 
-    $('#hidden-sidebar').click(function(e) {
-        e.preventDefault(); // Mencegah reload halaman
+    // $('#hidden-sidebar').click(function(e) {
+    //     e.preventDefault(); // Mencegah reload halaman
 
-        if (sidebarVisible) {
-            // Sembunyikan sidebar dan perbesar konten
-            $('#sidebar').hide();
-            $('#content').removeClass('col-sm-8').addClass('col-sm-12');
-        } else {
-            // Tampilkan sidebar dan kembalikan ukuran konten
-            $('#sidebar').show();
-            $('#content').removeClass('col-sm-12').addClass('col-sm-8');
-        }
+    //     if (sidebarVisible) {
+    //         // Sembunyikan sidebar dan perbesar konten
+    //         $('#sidebar').hide();
+    //         $('#content').removeClass('col-sm-8').addClass('col-sm-12');
+    //     } else {
+    //         // Tampilkan sidebar dan kembalikan ukuran konten
+    //         $('#sidebar').show();
+    //         $('#content').removeClass('col-sm-12').addClass('col-sm-8');
+    //     }
 
-        // Toggle status sidebarVisible
-        sidebarVisible = !sidebarVisible;
-    });
+    //     // Toggle status sidebarVisible
+    //     sidebarVisible = !sidebarVisible;
+    // });
 
 
     // Inputan 

@@ -45,6 +45,7 @@ $(document).ready(function () {
     const $sidebar = $('#sidebar');
     const $sidebarContent = $('#content');
     const $iconLeft = $('.sidebar-toggle-btn i');
+    const $sidebarChat = $('#zoom_right_sidebar');
 
     let wrapped = false; // track wrapping state
 
@@ -70,24 +71,30 @@ $(document).ready(function () {
             if (scrollTop > 65 && !wrapped) {
               $sidebar.children().wrapAll('<div class="inside-sidebar-wrapper"></div>');
               wrapped = true;
+              $sidebarChat.addClass('zoom_right_sidebar_collapse');
             } else if (scrollTop <= 65 && wrapped) {
               $sidebar.find('.inside-sidebar-wrapper').children().unwrap();
               wrapped = false;
+              $sidebarChat.removeClass('zoom_right_sidebar_collapse');
             }
     
             if (scrollTop + windowHeight >= documentHeight - 100) {
               $sidebar.addClass('at-bottom');
+              $sidebarChat.addClass('zoom_right_sidebar_at-bottom');
             } else {
               $sidebar.removeClass('at-bottom');
+              $sidebarChat.removeClass('zoom_right_sidebar_at-bottom');
             }
           });
         } else {
           // Clean up on small screens
           $(window).off('scroll.sidebarScroll');
           $sidebar.removeClass('collapsed at-bottom');
+          $sidebarChat.removeClass('zoom_right_sidebar_at-bottom');
           if (wrapped) {
             $sidebar.find('.inside-sidebar-wrapper').children().unwrap();
             wrapped = false;
+            $sidebarChat.removeClass('zoom_right_sidebar_collapse');
           }
         }
       }

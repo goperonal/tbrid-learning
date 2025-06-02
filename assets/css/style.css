@@ -580,7 +580,7 @@ span.bg_custom_1{
 }
 
 .home-sm-9 .image-container img {
-	height: 100%;
+	height: 100% !important;
 	width: 100%;
 	object-fit: cover;
 	display: block;
@@ -737,6 +737,35 @@ span.bg_custom_1{
 #sidebar.collapsed #join_class .fas {
 	display: block;
 }
+
+.class-contentfull .row .col-sm-9 {
+	-ms-flex: 0 0 calc(100% - 250px);
+	flex: 0 0 calc(100% - 250px);
+	max-width: calc(100% - 250px);
+	padding-right: 15px !important; 
+}
+
+.class-contentfull #zoom_right_sidebar {
+	-ms-flex: 0 0 250px;
+	flex: 0 0 250px;
+	max-width: 250px;
+}
+
+.class-contentfull #zoom_right_sidebar.zoom_right_sidebar_collapse {
+	position: fixed;
+	top: 0;
+	right: 0;
+	height: 100vh;
+	overflow: auto;
+}
+
+.class-contentfull #zoom_right_sidebar.zoom_right_sidebar_at-bottom {
+	height: calc(100vh - 135px);
+	overflow-y: auto;
+}
+
+
+
 /* RESPONSIVE DESIGN
 ==================================================*/
 @media (max-width: 1200px) {
@@ -881,6 +910,7 @@ span.bg_custom_1{
 
 	#sidebar .badge {
 		width: 100%;
+		padding: 10px;
 	}
 	#sidebar .class-box {
 		margin-bottom: 0px !important;
@@ -896,7 +926,7 @@ span.bg_custom_1{
         cursor: pointer;
         font-size: 24px;
         position: relative;
-        top: -5px;	
+        top: 0px;	
 		display: inline-block;
 	}
 	#sidebar .class-collaps-content {
@@ -972,6 +1002,18 @@ span.bg_custom_1{
 	#assignment-main .row .col-sm-6{
 		min-height: unset !important;
 		overflow: auto;
+	}
+
+	.class-contentfull .row .col-sm-9 {
+		-ms-flex: 0 0 100%;
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+
+	.class-contentfull #zoom_right_sidebar {
+		-ms-flex: 0 0 100%;
+		flex: 0 0 100%;
+		max-width: 100%;
 	}
 }
 

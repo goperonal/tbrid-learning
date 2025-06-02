@@ -1,5 +1,5 @@
 <div id="main" class="wrapper containers bg_content">
-  <div class="row">
+  <div class="row class-contentfull">
     <div id="sidebar" class="col-sm-2 sidebar">
       
       <?php $this->load->view("students/kelas_list"); ?>
