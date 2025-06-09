@@ -790,6 +790,10 @@ span.bg_custom_1{
 	margin-bottom: 20px;
 }
 
+#form_add_assignment, #students_ajax_datatables_wrapper {
+	overflow: auto;
+}
+
 
 /* RESPONSIVE DESIGN
 ==================================================*/
