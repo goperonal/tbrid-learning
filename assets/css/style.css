@@ -231,7 +231,7 @@ p{
 }
 
 #assignment-main table tr td{
-	min-width: 100px;
+	min-width: unset;
 	padding-left: 10px;
 }
 
@@ -781,6 +781,14 @@ span.bg_custom_1{
 	background-color: #BDAEAE;
 }
 
+#live_user {
+	max-height: 300px;
+    overflow: auto;
+}
+
+.kelas-filter {
+	margin-bottom: 20px;
+}
 
 
 /* RESPONSIVE DESIGN

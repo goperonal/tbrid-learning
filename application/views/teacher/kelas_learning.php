@@ -203,7 +203,7 @@
 
                     // var_dump($user_list);
                     if($this->session->level_akses == 'teacher')
-                      echo "<li class='list-group-item student_answer' data-id='teacher'><i class='fas fa-circle fa-sx pl-1 mr-3'></i>".$this->session->user_name."</li>";
+                      echo "<li class='list-group-item'><i class='fas fa-circle fa-sx pl-1 mr-3'></i>".$this->session->user_name."</li>";
 
                     foreach ($students->result() as $student) {
                         echo "<li class='list-group-item list-students student_answer' data-id='$student->akun_id'><i class='fas fa-circle fa-sx pl-1 mr-3'></i>$student->nama_depan $student->nama_belakang</li>";
@@ -426,6 +426,7 @@
           else{
             // $.session.set('success', 'Successfully sent the message!');
             // location.reload();
+            $("#live_chat_message").val("");
             loadChat();
           }
         },

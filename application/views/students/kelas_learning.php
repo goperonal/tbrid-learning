@@ -327,6 +327,7 @@
           else{
             // $.session.set('success', 'Successfully sent the message!');
             // location.reload();
+            $("#live_chat_message").val("");
             loadChat();
           }
         },

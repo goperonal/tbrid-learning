@@ -47,7 +47,7 @@
                 <div id="desktop-navbar">
                     <nav class="navbar" style="background-color:#023E51;">
                         <a class="navbar-brand" href="<?php echo base_url(); ?>">
-                            <img src="<?php echo base_url(); ?>assets/img/logo.png" alt="T-Brid Learning" class="img-fluid mr-4" width="150">
+                            <img src="<?php echo base_url(); ?>assets/img/logo.png" alt="T-Brid Learning" class="img-fluid mr-4" width="200">
                         </a>
                         <?php if($this->session->setatus_login == 'user_login'): ?>
                             <ul class="navbar-nav mr-auto">
