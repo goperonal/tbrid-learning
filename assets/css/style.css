@@ -219,6 +219,8 @@ p{
 ===============================================*/
 #assignment-main{
 	background: #D8D0CB;
+	flex: 0 0 calc(100% - 240px);
+	max-width: 100%;
 }
 
 #assignment-main .row.box-1{
