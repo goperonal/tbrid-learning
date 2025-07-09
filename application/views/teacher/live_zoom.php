@@ -53,22 +53,22 @@
       </div>
 
       <!-- Dependencies for client view and component view -->
-      <script src="https://source.zoom.us/3.8.5/lib/vendor/react.min.js"></script>
-      <script src="https://source.zoom.us/3.8.5/lib/vendor/react-dom.min.js"></script>
-      <script src="https://source.zoom.us/3.8.5/lib/vendor/redux.min.js"></script>
-      <script src="https://source.zoom.us/3.8.5/lib/vendor/redux-thunk.min.js"></script>
-      <script src="https://source.zoom.us/3.8.5/lib/vendor/lodash.min.js"></script>
+      <script src="https://source.zoom.us/3.13.1/lib/vendor/react.min.js"></script>
+      <script src="https://source.zoom.us/3.13.1/lib/vendor/react-dom.min.js"></script>
+      <script src="https://source.zoom.us/3.13.1/lib/vendor/redux.min.js"></script>
+      <script src="https://source.zoom.us/3.13.1/lib/vendor/redux-thunk.min.js"></script>
+      <script src="https://source.zoom.us/3.13.1/lib/vendor/lodash.min.js"></script>
 
       <!-- CDN for client view -->
-      <script src="https://source.zoom.us/3.8.5/zoom-meeting-3.8.5.min.js"></script>
-      <!-- <link type="text/css" rel="stylesheet" href="https://source.zoom.us/3.8.5/css/bootstrap.css" /> -->
-      <link type="text/css" rel="stylesheet" href="https://source.zoom.us/3.8.5/css/react-select.css" />
+      <script src="https://source.zoom.us/3.13.1/zoom-meeting-3.13.1.min.js"></script>
+      <!-- <link type="text/css" rel="stylesheet" href="https://source.zoom.us/3.13.1/css/bootstrap.css" /> -->
+      <link type="text/css" rel="stylesheet" href="https://source.zoom.us/3.13.1/css/react-select.css" />
 
       <script>
           console.log(JSON.stringify(ZoomMtg.checkSystemRequirements()));
 
           // it's option if you want to change the WebSDK dependency link resources. setZoomJSLib must be run at first
-          ZoomMtg.setZoomJSLib("https://source.zoom.us/3.8.5/lib", "/av"); // CDN version defaul
+          ZoomMtg.setZoomJSLib("https://source.zoom.us/3.13.1/lib", "/av"); // CDN version defaul
 
           ZoomMtg.preLoadWasm();
           // ZoomMtg.prepareJssdk();
